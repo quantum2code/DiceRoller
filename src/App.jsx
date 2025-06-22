@@ -71,7 +71,7 @@ function App() {
         <Canvas
           camera={{ fov: 10 }}
         >
-          <ambientLight intensity={1} />
+          <ambientLight intensity={2} />
           <directionalLight color="white" position={[0, 5, 5]} />
           <spotLight color={"white"} position={[0,10,10]} intensity={500} angle={-Math.PI/4}/>
           <RotateDice />
@@ -80,7 +80,7 @@ function App() {
 
       <h1 className="italic">and you number is.....</h1>
       <p className="font-mono text-2xl">{displayNum}</p>
-      <button
+      <button disabled={isRotating}
         onClick={() => {
           setRandNum(randomNumGen());
           setIsRotating(true);
