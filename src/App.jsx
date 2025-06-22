@@ -66,14 +66,14 @@ function App() {
 
   return (
     <>
-    <div className=" flex flex-col items-center gap-[1rem] m-0">
+    <div className=" flex flex-col items-center gap-[1rem] h-screen justify-center">
       <div className="w-[15rem] h-[15rem]">
         <Canvas
           camera={{ fov: 10 }}
         >
-          <ambientLight intensity={2} />
+          <ambientLight intensity={1} />
           <directionalLight color="white" position={[0, 5, 5]} />
-          <spotLight color={"white"} position={[0,5,6]} intensity={10} angle={-Math.PI/4}/>
+          <spotLight color={"white"} position={[0,10,10]} intensity={500} angle={-Math.PI/4}/>
           <RotateDice />
         </Canvas>
       </div>
