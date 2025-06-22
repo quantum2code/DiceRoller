@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 button {
-    background: rgb(190, 189, 189);
-    color: black;
-    border: 2px solid gray;
-    border-radius: 10px ;
-    padding: 4px;
+    background: rgb(57, 102, 249);
+    color: white;
+    border-radius: 3rem ;
+    padding: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 2px;
 }
