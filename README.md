@@ -1,4 +1,4 @@
-# Dice Roller
+# Roll the dice
 
 just a humble dice to (potentially) get started with truely random number genration, three.js
 
